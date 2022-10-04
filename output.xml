@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221004 21:32:05.481" rpa="false" schemaversion="3">
+<suite id="s1" name="NewUserTest" source="C:\Users\abh\PycharmProjects\test\TestCases\NewUserTest.robot">
+<test id="s1-t1" name="Verify Successful Login to OrangeHRM" line="9">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/abh/Downloads/chromedriver_win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221004 21:32:05.608" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20221004 21:32:05.608" endtime="20221004 21:32:06.710"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221004 21:32:06.710" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20221004 21:32:06.710" endtime="20221004 21:32:09.023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221004 21:32:09.024" endtime="20221004 21:32:09.351"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:09.352" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20221004 21:32:09.352" endtime="20221004 21:32:09.438"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:09.438" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20221004 21:32:09.513" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221004 21:32:09.565" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221004 21:32:09.438" endtime="20221004 21:32:09.565"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:09.566" level="INFO">Clicking element 'css:button[type="submit"]'.</msg>
+<status status="PASS" starttime="20221004 21:32:09.566" endtime="20221004 21:32:09.614"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:app</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221004 21:32:09.614" endtime="20221004 21:32:11.838"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//a[@href='/web/index.php/admin/viewAdminModule']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:11.839" level="INFO">Clicking link 'xpath=//a[@href='/web/index.php/admin/viewAdminModule']'.</msg>
+<status status="PASS" starttime="20221004 21:32:11.838" endtime="20221004 21:32:12.544"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:app</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221004 21:32:12.544" endtime="20221004 21:32:12.564"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class="oxd-button oxd-button--medium oxd-button--secondary"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:12.565" level="INFO">Clicking element 'xpath=//button[@class="oxd-button oxd-button--medium oxd-button--secondary"]'.</msg>
+<status status="PASS" starttime="20221004 21:32:12.565" endtime="20221004 21:32:13.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:13.110" level="INFO">Clicking element 'xpath=//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"]'.</msg>
+<status status="PASS" starttime="20221004 21:32:13.110" endtime="20221004 21:32:13.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath: //*[contains(text(), "ESS")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:13.178" level="INFO">Clicking element 'xpath: //*[contains(text(), "ESS")]'.</msg>
+<status status="PASS" starttime="20221004 21:32:13.177" endtime="20221004 21:32:13.241"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"] Eldin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221004 21:32:13.242" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20221004 21:32:13.242" endtime="20221004 21:32:13.242"/>
+</kw>
+<doc>Adding the new user</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221004 21:32:05.608" endtime="20221004 21:32:13.244">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<doc>Login Functionality</doc>
+<status status="FAIL" starttime="20221004 21:32:05.481" endtime="20221004 21:32:13.245"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="NewUserTest">NewUserTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
