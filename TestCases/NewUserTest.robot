@@ -21,7 +21,6 @@ Verify Successful Login to OrangeHRM
     Click Element   xpath=//button[@class="oxd-button oxd-button--medium oxd-button--secondary"]
     Click Element   xpath=//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"]
     Click Element   xpath: //*[contains(text(), "ESS")]
-    Input Text  xpath=//div[@class="oxd-autocomplete-text-input oxd-autocomplete-text-input--active"] Eldin
 
 
 
